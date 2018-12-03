@@ -21,7 +21,7 @@ public class StoryControllerScript : MonoBehaviour {
     public CardControllerScript cardScript;
     public AltarScript altarScript;
     public Image globalFade;
-    public CanvasGroup introFade, mainTextFade, acceptCardDescriptionFade, daysLeftFade;
+    public CanvasGroup introFade, mainTextFade, acceptCardDescriptionFade, daysLeftFade, toBeContinuedFade;
     public RectTransform rootCanvasTransform;
     public TextMeshProUGUI mainText, introText, promptLabel, acceptCardDescriptionLabel;
     public ScrollRect scrollRect;
@@ -91,6 +91,9 @@ public class StoryControllerScript : MonoBehaviour {
 
     static HashSet<ContinueTrigger> mainTextFadeTriggers = new HashSet<ContinueTrigger>() { ContinueTrigger.AcceptCard, ContinueTrigger.AddCardToHand, ContinueTrigger.HideTimer, ContinueTrigger.LossFadeIn, ContinueTrigger.LossFadeOut, ContinueTrigger.RevealFade };
     void LateUpdate () {
+        if (Input.GetKeyDown(KeyCode.Escape)) {
+            Application.Quit();
+        }
         if (mainTextFadeTriggers.Contains(continueTrigger) || cardScript.PlayerIsHolding()) {
             mainTextFade.alpha = Mathf.Max(0, mainTextFade.alpha -= .05f);
         } else {
@@ -163,7 +166,7 @@ public class StoryControllerScript : MonoBehaviour {
         }
         else if (continueTrigger == ContinueTrigger.LossFadeIn) {
             if (globalFade.color.a < 1) {
-                Color color = new Color(255, 0, 0, Mathf.Min(1, globalFade.color.a + .1f));
+                Color color = new Color(255, 0, 0, Mathf.Min(1, globalFade.color.a + .05f));
                 globalFade.color = color;
             }
             else {
@@ -235,6 +238,9 @@ public class StoryControllerScript : MonoBehaviour {
             }
             UpdateTimeLabel();
         }
+        else if (continueTrigger == ContinueTrigger.ToBeContinued) {
+            toBeContinuedFade.alpha = Mathf.Min(1, toBeContinuedFade.alpha + .01f);
+        }
 
         if (continueTrigger == ContinueTrigger.None) {
             // Execute the next line.
@@ -263,6 +269,9 @@ public class StoryControllerScript : MonoBehaviour {
                 Go goLine = (Go)CurrentLineOrSubline();
                 GoToPage(goLine.page);
                 currentType = CurrentLineOrSubline().GetLineType();
+            } else if (currentType == LineType.TBC) {
+                continueTrigger = ContinueTrigger.ToBeContinued;
+                return;
             } else if (currentType == LineType.Score) {
                 Score scoreLine = (Score)CurrentLineOrSubline();
                 score += scoreLine.points;
@@ -349,6 +358,6 @@ public class StoryControllerScript : MonoBehaviour {
     }
 
     enum ContinueTrigger {
-        None, AcceptCard, AddCardToHand, ClearFade, Click, HideTimer, LossFadeIn, LossFadeOut, RevealDaysLeft, RevealFade, Sacrifice, Timer, TimeUpdate
+        None, AcceptCard, AddCardToHand, ClearFade, Click, HideTimer, LossFadeIn, LossFadeOut, RevealDaysLeft, RevealFade, Sacrifice, Timer, TimeUpdate, ToBeContinued
     }
 }

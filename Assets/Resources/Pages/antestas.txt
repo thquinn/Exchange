@@ -1,10 +1,10 @@
 time: 18 afternoon
 text: A week passes without event. You hardly leave your cottage, too wary to explore Vandine but for a few twilight forays when you hope not to be seen. No one comes pounding down your door for help.
-text: Eventually, though, you tire of dried and preserved food, of washing it down with well water. You make yourself as presentable as you can without a mirror, pack up your things, and head out.
+text: Eventually, you tire of dried and preserved food, of washing it down with well water. You make yourself as presentable as you can without a mirror, pack up your things, and head out.
 text: A few dozen people mill about the town center. A tavern functions as the entire "commercial district," along with two shoddy wooden stalls manned by locals. People notice you as you pass, let you notice them noticing you. Some smiles, some sneers. A lot of missing teeth.
 text: A man slouching against the tavern spots you and makes a beeline for you.
 text: "Hey, you!" He shouts, breaking the afternoon quiet and turning heads.\n"How, uh... how can I help?" You say.\n"You're from the Arcanum." It isn't a question.\n"That's right."\n"You're the Exchanger." A crowd starts to gather, or what makes for a crowd in a hundred-person town.
-text: "Show us something, eh?"\n"Leave it be, Antestas," a young woman says.\n"'Leave it be'? We got a real-life Exchanger in town, hiding out in that fancy new cottage for a week! Let's see some magic!"
+text: "Show us something, eh?"\n"Leave it be, Antestas," a woman interjects.\n"'Leave it be'? We got a real-life Exchanger in town, hiding out in that fancy new cottage for a week! Let's see some magic!"
 text: "It's fine," you address the crowd. A mother pulls her young daughter away from the crowd. "Is anyone sick? Anyone have something broken that needs fixing?"\n"No," says Antestas, "I ain't talking about that hedge-wizard shit. I wanna see some dang Magic, capital M!"\nThe crowd murmurs, a mixed reaction, but most stare at you expectantly.
 text: You roll up your sleeves.
 
@@ -49,4 +49,8 @@ sacrifice: orb
 	text: A look of panic crosses his face. "Uhh... I guess I must have read about it somewhere." Before you can respond, he runs off. The rest of the crowd regards you, impressed, until the snow sublimates and they go about their days.
 
 sacrifice: skein
-	
+	text: Something happens.
+	lose: skein
+	text: Something else happens.
+
+tbc

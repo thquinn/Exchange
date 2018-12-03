@@ -75,6 +75,7 @@
     <Compile Include="Assets\Scripting\Reveal.cs" />
     <Compile Include="Assets\Scripting\Sacrifice.cs" />
     <Compile Include="Assets\Scripting\Score.cs" />
+    <Compile Include="Assets\Scripting\TBC.cs" />
     <Compile Include="Assets\Scripting\Text.cs" />
     <Compile Include="Assets\Scripting\Time.cs" />
     <Compile Include="Assets\StoryControllerScript.cs" />

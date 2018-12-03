@@ -37,6 +37,9 @@ class Util {
             case "score":
                 lineType = LineType.Score;
                 break;
+            case "tbc":
+                lineType = LineType.TBC;
+                break;
             case "text":
                 lineType = LineType.Text;
                 break;

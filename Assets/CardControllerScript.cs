@@ -7,6 +7,7 @@ public class CardControllerScript : MonoBehaviour {
     public StoryControllerScript storyScript;
     public AltarScript altarScript;
     public AudioScript audioScript;
+    public TextMeshProUGUI descriptionLabel;
 
     public GameObject cardPrefab;
     public Texture[] textures;
@@ -20,6 +21,8 @@ public class CardControllerScript : MonoBehaviour {
     float heldDX = 0, heldDY = 0;
 
     void Start() {
+        descriptionLabel.alpha = 0;
+
         cardImages = new Dictionary<string, Texture>();
         foreach (Texture texture in textures) {
             cardImages.Add(texture.name, texture);
@@ -153,6 +156,12 @@ public class CardControllerScript : MonoBehaviour {
             }
             held.transform.position = Vector3.Lerp(held.transform.position, heldPosition, .4f);
             held.transform.rotation = Quaternion.Lerp(held.transform.rotation, heldAngle, .4f);
+
+            // Manage description label.
+            descriptionLabel.alpha = Mathf.Min(1, descriptionLabel.alpha + .04f);
+            descriptionLabel.text = storyScript.items[held.name];
+        } else {
+            descriptionLabel.alpha = 0;
         }
     }
 

@@ -8,5 +8,5 @@ abstract class Line {
 }
 
 public enum LineType {
-    Clear, Get, Go, Lose, Reveal, Sacrifice, Score, Text, Time
+    Clear, Get, Go, Lose, Reveal, Sacrifice, Score, TBC, Text, Time
 }

@@ -52,6 +52,9 @@ class Page {
             else if (lineType == LineType.Score) {
                 lines.Add(new Score(stripped));
             }
+            else if (lineType == LineType.TBC) {
+                lines.Add(new TBC());
+            }
             else if (lineType == LineType.Text) {
                 lines.Add(new Text(stripped));
             }

@@ -17,8 +17,8 @@ text: She invites herself in. "I admit that I don't really know what it is you d
 text: You put on your best officious tone. "As your resident Exchanger, I am here to help in any way I can. If anyone in town has a problem, tell them to seek me out and I will do my best to—" You stammer as Zasha pushes something into your hands.
 get: skein
 text: "I figure you'll have plenty of free time," she says, "so here's something to keep you occupied. Product of Cademo's prize sheep!" You quietly thank her.
-text: "Now I gotta go, but there's something you should know." A puzzled look crosses her face. "Now, everyone's been waitin' for you to show up, and I bet you'll have folks pounding down your door for help with this and that..."\n"What?" You ask.\n"But... some others aren't quite so happy you're here."
-text: "I see."\n"Maybe they're superstitious, or maybe they just ain't used to visitors, but I'm sure they'll warm up to you once they meet you."
+text: "Now I gotta go, but there's something you should know." A puzzled look crosses her face. "Now, everyone's been waitin' for you to show up, and I bet you'll have folks pounding down your door for help with this and that, but..."\n"What?" You ask.\n"...some others aren't quite so happy you're here."
+text: "I see."\n"Maybe they're superstitious, or maybe they just ain't used to visitors, but I'm sure they'll warm up to you once they get to know you. You seem... likeable!"\n"Thanks."
 text: You've never heard of anything like this before. Your older friends, back from their rural residencies, have regaled you with stories of kind, honest bumpkins dazzled by arcane displays. Magic is rare, sure, but it's in most parts of the world it's hardly an unknown quantity.
 text: You really are in the middle of nowhere.
 text: You and Zasha chat for a couple more minutes, then she's off to continue her day. You close the door and sit on your bed, feeling idle.

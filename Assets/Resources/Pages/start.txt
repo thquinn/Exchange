@@ -45,6 +45,6 @@ sacrifice: orb
 
 text: "I've spoken to the driver," your mentor says, pulling a folded scrap of paper from his breast pocket. "He should have you in Vandine by the evening of the third. Population: one hundred and seventeen, primary industry"—he casts you a pitying glance—"agriculture. You will spend exactly one year there, upon completion of which you will become an Exchanger-at-Large." His enunciation of those last three words is perfectly precise. You rack your brain for something sentimental to say and come up empty.
 text: "Rural residency is a proud arcane tradition, one as old as this very profession. You may think it beneath you — I know I did when I was your age — but this life of honest work will teach you things that mere tutelage cannot."
-text: "I've... been hard on you." You avert your gaze, surprised to find yourself on the verge of tears as he continues. "It's because you are destined for great things. Try not to forget that while you mend plows and farmstead marriages. I anticipate your return."
+text: He pauses. "I've... been hard on you." You avert your gaze, surprised to find yourself on the verge of tears as he continues. "It's because you are destined for great things. Try not to forget that while you mend plows and farmstead marriages. I anticipate your return."
 text: You try one last time to put words to your feelings, and again fail. You never had an adequate teacher in these matters. And then he's walking away, leaving you standing beside your wagon.
 go: journey

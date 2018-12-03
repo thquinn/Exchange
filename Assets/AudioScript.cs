@@ -17,9 +17,9 @@ public class AudioScript : MonoBehaviour {
         sources.Add(SFX.Set, source_set);
     }
     public void Play(SFX sfx) {
-        if (sfx == SFX.Get) {
-            source_get.pitch = Random.Range(1.25f, 1.75f);
-        }
+        //if (sfx == SFX.Get) {
+        //    source_get.pitch = Random.Range(1.45f, 1.55f);
+        //}
         sources[sfx].PlayOneShot(sources[sfx].clip);
     }
 
