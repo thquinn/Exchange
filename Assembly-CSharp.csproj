@@ -10,7 +10,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace>
     </RootNamespace>
-    <ProjectGuid>{EE95013C-53A1-EB4D-0BAD-E8154B125CCF}</ProjectGuid>
+    <ProjectGuid>{1A1C2E15-ACC1-1C04-910B-C73DAB6EEB67}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp</AssemblyName>
@@ -62,6 +62,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\AltarScript.cs" />
+    <Compile Include="Assets\AudioScript.cs" />
     <Compile Include="Assets\CandleScript.cs" />
     <Compile Include="Assets\CardControllerScript.cs" />
     <Compile Include="Assets\Scripting\Clear.cs" />
@@ -100,22 +101,22 @@
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Surface.shader" />
     <None Include="Assets\Resources\cards.txt" />
     <Reference Include="Unity.VectorGraphics">
-      <HintPath>C:/Users/Cae/Desktop/Thumbini ACTIVE/Source Code/Sacrifice/Library/ScriptAssemblies/Unity.VectorGraphics.dll</HintPath>
+      <HintPath>C:/Users/Cae/Desktop/Thumbini ACTIVE/Source Code/Exchange/Library/ScriptAssemblies/Unity.VectorGraphics.dll</HintPath>
     </Reference>
     <Reference Include="Unity.InternalAPIEditorBridge.003">
-      <HintPath>C:/Users/Cae/Desktop/Thumbini ACTIVE/Source Code/Sacrifice/Library/ScriptAssemblies/Unity.InternalAPIEditorBridge.003.dll</HintPath>
+      <HintPath>C:/Users/Cae/Desktop/Thumbini ACTIVE/Source Code/Exchange/Library/ScriptAssemblies/Unity.InternalAPIEditorBridge.003.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro.Editor">
-      <HintPath>C:/Users/Cae/Desktop/Thumbini ACTIVE/Source Code/Sacrifice/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
+      <HintPath>C:/Users/Cae/Desktop/Thumbini ACTIVE/Source Code/Exchange/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.PackageManagerUI.Editor">
-      <HintPath>C:/Users/Cae/Desktop/Thumbini ACTIVE/Source Code/Sacrifice/Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll</HintPath>
+      <HintPath>C:/Users/Cae/Desktop/Thumbini ACTIVE/Source Code/Exchange/Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.VectorGraphics.Editor">
-      <HintPath>C:/Users/Cae/Desktop/Thumbini ACTIVE/Source Code/Sacrifice/Library/ScriptAssemblies/Unity.VectorGraphics.Editor.dll</HintPath>
+      <HintPath>C:/Users/Cae/Desktop/Thumbini ACTIVE/Source Code/Exchange/Library/ScriptAssemblies/Unity.VectorGraphics.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro">
-      <HintPath>C:/Users/Cae/Desktop/Thumbini ACTIVE/Source Code/Sacrifice/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
+      <HintPath>C:/Users/Cae/Desktop/Thumbini ACTIVE/Source Code/Exchange/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.AIModule">
       <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>

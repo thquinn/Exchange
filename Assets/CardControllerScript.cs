@@ -6,8 +6,11 @@ using UnityEngine;
 public class CardControllerScript : MonoBehaviour {
     public StoryControllerScript storyScript;
     public AltarScript altarScript;
+    public AudioScript audioScript;
 
     public GameObject cardPrefab;
+    public Texture[] textures;
+    public Dictionary<string, Texture> cardImages;
 
     List<GameObject> hand;
     GameObject held;
@@ -16,6 +19,14 @@ public class CardControllerScript : MonoBehaviour {
     public GameObject altar;
     float heldDX = 0, heldDY = 0;
 
+    void Start() {
+        cardImages = new Dictionary<string, Texture>();
+        foreach (Texture texture in textures) {
+            cardImages.Add(texture.name, texture);
+        }
+        hand = new List<GameObject>();
+    }
+
     public void CreateCard(string card) {
         List<string> cardNames = new List<string>(storyScript.items.Keys);
         cardNames.Sort();
@@ -23,6 +34,8 @@ public class CardControllerScript : MonoBehaviour {
 
         created = GameObject.Instantiate(cardPrefab);
         created.name = card;
+        MeshRenderer cardRenderer = created.GetComponentInChildren<MeshRenderer>();
+        cardRenderer.material.SetTexture("_MainTex", cardImages[card]);
         TextMeshPro[] texts = created.GetComponentsInChildren<TextMeshPro>();
         foreach (TextMeshPro text in texts) {
             if (text.gameObject.tag == "Number") {
@@ -51,10 +64,6 @@ public class CardControllerScript : MonoBehaviour {
         Destroy(chosen);
         chosen = null;
     }
-
-	void Start () {
-        hand = new List<GameObject>();
-	}
 	
 	void Update () {
         // Created card.
@@ -97,6 +106,7 @@ public class CardControllerScript : MonoBehaviour {
                 }
                 if (Input.GetMouseButtonDown(0)) {
                     held = hand[closestIndex];
+                    audioScript.Play(SFX.CardPick);
                 }
             }
         }
@@ -116,6 +126,8 @@ public class CardControllerScript : MonoBehaviour {
                     chosen.transform.position = altar.transform.position;
                     chosen.transform.position += altar.transform.up * .01f;
                     chosen.transform.rotation = Quaternion.Euler(70, 0, 0);
+                } else {
+                    audioScript.Play(SFX.CardReturn);
                 }
                 held = null;
                 return;

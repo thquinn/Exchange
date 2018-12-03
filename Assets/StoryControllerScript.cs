@@ -31,6 +31,9 @@ public class StoryControllerScript : MonoBehaviour {
     string time;
     int timer;
 
+    // Audio.
+    public AudioScript audioScript;
+
 	void Start () {
         score = 0;
 
@@ -109,6 +112,7 @@ public class StoryControllerScript : MonoBehaviour {
             }
             if (Input.GetMouseButtonDown(0)) {
                 cardScript.AddCreatedToHand();
+                audioScript.Play(SFX.Click);
                 continueTrigger = ContinueTrigger.AddCardToHand;
             }
         }
@@ -134,6 +138,7 @@ public class StoryControllerScript : MonoBehaviour {
                 clicked = raycastResults.Count > 0 && raycastResults[0].gameObject.tag == "Click";
             }
             if (clicked) {
+                audioScript.Play(SFX.Click);
                 continueTrigger = ContinueTrigger.None;
             }
         }
@@ -209,6 +214,7 @@ public class StoryControllerScript : MonoBehaviour {
                     }
                 }
                 altarScript.Chosen();
+                audioScript.Play(SFX.Set);
                 continueTrigger = ContinueTrigger.None;
             }
         }
@@ -288,12 +294,14 @@ public class StoryControllerScript : MonoBehaviour {
             Get getLine = (Get)CurrentLineOrSubline();
             cardScript.CreateCard(getLine.card);
             acceptCardDescriptionLabel.text = items[getLine.card];
+            audioScript.Play(SFX.Get);
             continueTrigger = ContinueTrigger.AcceptCard;
             return;
         }
         if (currentType == LineType.Lose) {
             continueTrigger = ContinueTrigger.LossFadeIn;
             altarScript.Activate();
+            audioScript.Play(SFX.Sacrifice);
             return;
         }
         if (currentType == LineType.Reveal) {
@@ -337,7 +345,7 @@ public class StoryControllerScript : MonoBehaviour {
         timeLabel.text = dayOfMonth + suffix + " " + Constants.MONTHS[month] + ", " + time;
 
         int daysRemaining = 368 - day;
-        daysLeftLabel.text = daysRemaining + (daysRemaining == 1 ? " day" : " days") + " remaining";
+        daysLeftLabel.text = daysRemaining + (daysRemaining == 1 ? " day" : " days") + (daysRemaining == 1 ? " remains" : " remain");
     }
 
     enum ContinueTrigger {

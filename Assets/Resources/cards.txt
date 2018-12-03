@@ -4,8 +4,12 @@ atlas
 Before your acceptance into the Arcanum, you'd never have dreamed of owning such a thing. A printed compendium of most all known geographical charts and surveys. Your assignment isn't exactly remote enough to necessitate it.
 companion
 Your faithful companion, a pet chipmunk. You came home to her skittering around your room during your first year at the Arcanum. You never figured out how she got in, and you never quite tamed her, but from her tiny form you've always sensed a deep kinship.
+coin
+A single silver coin, speckled with tarnish. Depicts the long-dead king who established the modern system of currency. Even in profile, his unattractiveness is apparent.
 implements
 A sheaf of paper, a quill, and an inkpot. Not strictly necessary to perform Exchanges: most find it useful to take notes afterwards, though some experienced wizards contend that an overreliance on procedure can curb instinctual development.
+ribbon
+A hair ribbon, deep red and unusually ornate for a Vandinan accessory. A strand of golden hair clings to it.
 orb
 A vitreous, milky-white sphere about the size of a grapefruit. Given to you by a superstitious classmate after an ominous and unsolicited tarot reading. All it's ever done is gather dust in a corner of your dormitory; as far as you can tell, it's just a hunk of glass.
 skein
