@@ -1,0 +1,52 @@
+time: 18 afternoon
+text: A week passes without event. You hardly leave your cottage, too wary to explore Vandine but for a few twilight forays when you hope not to be seen. No one comes pounding down your door for help.
+text: Eventually, though, you tire of dried and preserved food, of washing it down with well water. You make yourself as presentable as you can without a mirror, pack up your things, and head out.
+text: A few dozen people mill about the town center. A tavern functions as the entire "commercial district," along with two shoddy wooden stalls manned by locals. People notice you as you pass, let you notice them noticing you. Some smiles, some sneers. A lot of missing teeth.
+text: A man slouching against the tavern spots you and makes a beeline for you.
+text: "Hey, you!" He shouts, breaking the afternoon quiet and turning heads.\n"How, uh... how can I help?" You say.\n"You're from the Arcanum." It isn't a question.\n"That's right."\n"You're the Exchanger." A crowd starts to gather, or what makes for a crowd in a hundred-person town.
+text: "Show us something, eh?"\n"Leave it be, Antestas," a young woman says.\n"'Leave it be'? We got a real-life Exchanger in town, hiding out in that fancy new cottage for a week! Let's see some magic!"
+text: "It's fine," you address the crowd. A mother pulls her young daughter away from the crowd. "Is anyone sick? Anyone have something broken that needs fixing?"\n"No," says Antestas, "I ain't talking about that hedge-wizard shit. I wanna see some dang Magic, capital M!"\nThe crowd murmurs, a mixed reaction, but most stare at you expectantly.
+text: You roll up your sleeves.
+
+sacrifice: aliment
+	text: You present the tin of hard tack with as much showmanship as you can manage. You open the lid, showing the crackers within. No oohs or ahhs — okay. You jerk the tin upwards, flinging its contents into the air...
+	lose: aliment
+	text: ...as you consign the carbohydrates to the void, their chemical energy instantly converts to heat, creating a massive fireball over the onlookers' heads. Panicked cries go out, people cowering in terror, swatting out the flames on their straw hats. That may have been a bit much.
+	score: -10
+	text: "Now that's what I'm talking about!" Antestas shouts triumphantly. "Hell yeah!"\nThe crowd dissipates, some looking at you with fearful respect, most refusing to look at you at all.
+
+sacrifice: atlas
+	text: You're not sure why, but you decide to appeal to their intellects. You unstrap the atlas from your back and drop it, open, onto the dusty ground. It's turned to a page displaying a map of the entire known world. You let your mind drift up, up, and carefully incant four words...
+	lose: atlas
+	text: ...you stand two kilometers in the air above Vandine, accompanied by the entire crowd. They scream, trying to find their footing, but they eventually calm down and start to look around in bewilderment.
+	text: The world is laid out like a map below you, Vandine a tiny speck. Dainty clouds drift all around you. The Arcanum and its city, nearly one hundred kilometers away, are visible on the horizon. "There," you announce. "That's where I came from. Not so far away. I'm honored to be your guest here, to learn about your lives and to be a part of them."
+	score: 15
+	text: The illusion fades after a minute. the blue sky under your feet giving way to familiar dirt. "Whoa," Antestas says. "That sure was something." The crowd murmurs its agreement before dispersing, each person staggering away like a sailor with sea legs.
+
+sacrifice: companion
+	text: You fish Ravai out of your pocket, unsure of why. She perches calmly in the middle of your outstretched palm, which elicits some confusion from the crowd. You're suddenly overcome by stage fright. Panicked, you improvise a spell full of bizarre half-syllables...
+	lose: companion
+	text: ...with a flash and a squeak, your chipmunk disappears and stones begin to hail onto everyone nearby. Shouts of annoyance go up.
+	text: The shouts become cries of puzzlement as you all collectively realize that they're not stones at all — they're walnuts. People pick them up and rattle them. A couple people start eating them. You ask yourself why you did this.
+	text: The nutstorm becomes a drizzle, then stops. It produced several thousand walnuts, all told.\n"O... okay?" Antestas asks rhetorically. "Is this what Exchangers do?"\n"Yeah," you reply. You don't sound sure.
+	text: Members of the crowd gather nuts, eventually growing bored and dissipating. You idly pass your hand over the pocket where Ravai once sat and feel a pang of guilt.
+
+sacrifice: implements
+	text: You unbundle your notes and flip through them. The pages are covered in dense cursive. You consider your options for a few seconds before spreading them on the ground and reciting a spell in basso profundo...
+	lose: implements
+	text: ...the sheets wither like rotting leaves as the ink rises from them in strands. The onyx strands, numbering thousands, hover in midair. They slink past each other, interlace, waver like charmed snakes. The crowd stands among it all, wilting away from them and whimpering when they draw near.
+	score: -5
+	text: The effect eventually fades, leaving black ash scattered on the ground. People seem mildly alarmed and entirely nonplussed.\n"What the heck was that?" Antestas asks, scratching his head. The crowd murmurs in agreement.
+	text: "It was Magic, capital M," you say.
+	text: "If you say so." Antestas turns to leave, and the crowd dissipates.
+
+sacrifice: orb
+	text: You remove the orb from the pouch on your belt, heft it in your hand. You select a simple spell and begin to recite it, adding performative embellishments as you go. It all sounds very impressive. Very Magic. You exclaim the last word and hurl the orb at the ground...
+	lose: orb
+	text: ...the crowd's collective breath catches in their throat at the sight: their town of Vandine, transformed into a snowy wonderland! In... early spring! Okay, you could have picked a more impressive season for this trick, but they seem satisfied with the show. The children immediately start a snow fight while the adults simply stand and gape.
+	score: 5
+	text: "Wow," Antestas says quietly, "you inverted its aspect."\n"You know what aspect inversion is?" You ask, surprised.
+	text: A look of panic crosses his face. "Uhh... I guess I must have read about it somewhere." Before you can respond, he runs off. The rest of the crowd regards you, impressed, until the snow sublimates and they go about their days.
+
+sacrifice: skein
+	

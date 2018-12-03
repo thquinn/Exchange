@@ -1,0 +1,50 @@
+time: 8 morning
+text: Today, finally, is the day.
+text: A year ago, you marked this day on your calendar. Since then, it has always been in the corner of your eye, in the corner of your mind. The end. The beginning.
+text: Time to hang up the silks and finery of scholarship, to put theory into practice.
+text: You gather your wizardly things and head out to meet the wagon.
+clear
+text: You hadn't expected your mentor to be waiting for you. By the time you spot him, a hundred meters off, he's already staring you down. The wisps of his white hair whip around in the wind. His arms are folded expectantly.
+text: You're not late; you rid yourself of that bad habit, and many others, in the pursuit of magic. Nevertheless, encounters with your mentor have always been exercises in inexplicable, unmerited guilt.
+text: "What a pleasant surprise," you manage.
+text: "You've overpacked," he replies.
+reveal
+get: implements
+get: aliment
+get: atlas
+get: companion
+get: orb
+text: "I have always told you that mastery over the Exchange requires an understanding of give and take."\n"You have."\n"A keen sense of minimalism."\n"Yes, but—"\n"The emotional fortitude to let go."\n"Yes, teacher."
+text: "Furthermore, there simply isn't room in the wagon." He uncrosses his arms, yet looks no less expectant. You know what you must do.
+
+sacrifice: aliment
+	text: You untuck the tin of crackers from your armpit and hold it lightly in your outstretched hands. The smell of burnt toast fills the air...
+	lose: aliment
+	text: ...the metal container clatters to the ground, empty. You make no move to pick it up. You feel simultaneously annoyed and invigorated. You're not looking forward to this days-long trip, cooped up in a wagon with all this energy.
+
+sacrifice: atlas
+	text: You laboriously unstrap the atlas from your back.\n"I gave that to you," he says.\n"I know," you reply as you clutch it close to your chest. You feel momentarily disoriented...
+	lose: atlas
+	text: ...your arms come together, the massive tome no longer between them. You've become very acquainted over the years with this sense of loss — your work demands it. Your head is a whirlwind of fleeting information, as though you'd been dreaming of being a brilliant cartographer and were suddenly shaken awake.
+
+sacrifice: companion
+	text: You reach into your pocket and grab gentle hold of Ravai. She already knows something's wrong; she nibbles nervously at your hand as you bring her into the morning air. Your mentor raises an eyebrow. "The emotional fortitude to let go," you repeat under your breath. You lift your cupped hands above your head...
+	lose: companion
+	text: ...and open them. The sudden absence of weight turns your stomach. "I know that wasn't easy," Whist says. You can't find it in yourself to respond.
+	score: 10
+
+sacrifice: implements
+	text: You take a moment to consider, then look down at the bundle of parchment in your arms. You heft it once, twice, thrice, each time feeling its weight a little less. Finally, you hurl it into the air...
+	lose: implements
+	text: ...the belt tying it together comes undone, then whips out of existence. The sheets scatter, swooping to the stone floor before suddenly ceasing to exist. All of your notes from your years of study: gone. Your time here has made you accustomed to loss, but it feels especially acute this time.
+
+sacrifice: orb
+	text: You take stock of the many pouches on your belt and single one out, the heaviest among them. You untie it and upend it into your palm. "I didn't even realize I'd brought this," you say as you extend your arm and let go...
+	lose: orb
+	text: ...the orb is gone before it hits the ground; a puff of white smoke in its place. A chill comes over you, but passes before you can shiver.
+
+text: "I've spoken to the driver," your mentor says, pulling a folded scrap of paper from his breast pocket. "He should have you in Vandine by the evening of the third. Population: one hundred and seventeen, primary industry"—he casts you a pitying glance—"agriculture. You will spend exactly one year there, upon completion of which you will become an Exchanger-at-Large." His enunciation of those last three words is perfectly precise. You rack your brain for something sentimental to say and come up empty.
+text: "Rural residency is a proud arcane tradition, one as old as this very profession. You may think it beneath you — I know I did when I was your age — but this life of honest work will teach you things that mere tutelage cannot."
+text: "I've... been hard on you." You avert your gaze, surprised to find yourself on the verge of tears as he continues. "It's because you are destined for great things. Try not to forget that while you mend plows and farmstead marriages. I anticipate your return."
+text: You try one last time to put words to your feelings, and again fail. You never had an adequate teacher in these matters. And then he's walking away, leaving you standing beside your wagon.
+go: journey

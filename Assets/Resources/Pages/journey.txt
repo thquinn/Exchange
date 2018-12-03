@@ -1,0 +1,25 @@
+time: 8 afternoon
+text: The journey out to Vandine feels endless. Attempts at small talk with the wagon's driver are abortive, so you stare out the window instead. With each passing hour, signs of civilization vanish.
+time: 9 morning
+text: On the second day, the comforting jostle of cobbled roads gives way to the monotony of dirt paths.
+time: 10 morning
+text: By the third day, these paths are overgrown with weeds. Sleep becomes a form of entertainment, but the frequent potholes and rocks rob you even of that.
+time: 10 late evening
+reveal
+text: It's dark when the wagon pulls into Vandine. A slender crescent of a moon provides the only illumination, setting the black silhouettes of houses against a near-black sky. No lanternlight on the streets, not a single candle in a window.
+text: The driver dismounts, squinting over a map. After a minute of holding it up to the moon and scratching his head, he leads you to a small cottage on the edge of town and pushes the door open. No lock. He motions inside before quickly and wordlessly walking back towards the wagon. You are alone.
+text: Your sense of the darkness is suddenly acute. You dash inside the cottage and mutter an arcane word to produce light as you slam the door.
+text: It's surprisingly nice inside: well furnished, cozy, stocked with provisions. You light some candles and sit on the bed, meaning to take an inventory...
+time: 11 morning
+text: ...you jump awake at the sound of someone knocking at your door. Sunlight streams in through the windows. Heart racing, you smooth out your robes and open the door.
+text: A middle-aged woman peers in at you, smile on her face. "Gosh, sorry if I woke you!" You give a mild assuaging reply. "Well. Welcome to Vandine! I'm Zasha, the mayor. Your mayor! We are just so thrilled to have you. Sorry for the unwarm welcome, but we farmers aren't much for celebrations, parties, what have you. Not like you city folk."
+text: She invites herself in. "I admit that I don't really know what it is you do," she says. "But you've got the robes, just like the stories!"
+text: You put on your best officious tone. "As your resident Exchanger, I am here to help in any way I can. If anyone in town has a problem, tell them to seek me out and I will do my best to—" You stammer as Zasha pushes something into your hands.
+get: skein
+text: "I figure you'll have plenty of free time," she says, "so here's something to keep you occupied. Product of Cademo's prize sheep!" You quietly thank her.
+text: "Now I gotta go, but there's something you should know." A puzzled look crosses her face. "Now, everyone's been waitin' for you to show up, and I bet you'll have folks pounding down your door for help with this and that..."\n"What?" You ask.\n"But... some others aren't quite so happy you're here."
+text: "I see."\n"Maybe they're superstitious, or maybe they just ain't used to visitors, but I'm sure they'll warm up to you once they meet you."
+text: You've never heard of anything like this before. Your older friends, back from their rural residencies, have regaled you with stories of kind, honest bumpkins dazzled by arcane displays. Magic is rare, sure, but it's in most parts of the world it's hardly an unknown quantity.
+text: You really are in the middle of nowhere.
+text: You and Zasha chat for a couple more minutes, then she's off to continue her day. You close the door and sit on your bed, feeling idle.
+go: antestas
