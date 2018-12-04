@@ -14,8 +14,8 @@ get: aliment
 get: atlas
 get: companion
 get: orb
-text: "I have always told you that mastery over the Exchange requires an understanding of give and take."\n"You have."\n"A keen sense of minimalism."\n"Yes, but—"\n"The emotional fortitude to let go."\n"Yes, teacher."
-text: "Furthermore, there simply isn't room in the wagon." He uncrosses his arms, yet looks no less expectant. You know what you must do.
+text: "I have always told you that mastery over the Exchange requires an understanding of give and take."\n"You have."\n"A keen sense of minimalism."\n"Yes, but—"\n"The emotional fortitude to let go."\n"Yes, mentor."
+text: "Furthermore, there simply isn't room in the wagon." He uncrosses his arms, yet looks no less expectant. You know what he's asking of you.
 
 sacrifice: aliment
 	text: You untuck the tin of crackers from your armpit and hold it lightly in your outstretched hands. The smell of burnt toast fills the air...
@@ -41,7 +41,7 @@ sacrifice: implements
 sacrifice: orb
 	text: You take stock of the many pouches on your belt and single one out, the heaviest among them. You untie it and upend it into your palm. "I didn't even realize I'd brought this," you say as you extend your arm and let go...
 	lose: orb
-	text: ...the orb is gone before it hits the ground; a puff of white smoke in its place. A chill comes over you, but passes before you can shiver.
+	text: ...the orb is gone before it hits the ground, a puff of white smoke in its place. A chill comes over you, but passes before you can shiver.
 
 text: "I've spoken to the driver," your mentor says, pulling a folded scrap of paper from his breast pocket. "He should have you in Vandine by the evening of the third. Population: one hundred and seventeen, primary industry"—he casts you a pitying glance—"agriculture. You will spend exactly one year there, upon completion of which you will become an Exchanger-at-Large." His enunciation of those last three words is perfectly precise. You rack your brain for something sentimental to say and come up empty.
 text: "Rural residency is a proud arcane tradition, one as old as this very profession. You may think it beneath you — I know I did when I was your age — but this life of honest work will teach you things that mere tutelage cannot."

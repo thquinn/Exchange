@@ -1,0 +1,92 @@
+time: 18 evening
+text: That night, you pore over your books and ponder a problem. You're a skilled enough Exchanger, this much is true, but an Exchanger is only as powerful as their collection of objects with which to perform Exchanges. A good collection is both abundant and diverse, and yours is neither. This scant pile of belongings from the Arcanum isn't going to last very long if you start to accumulate responsibilities. And that is your job, after all.
+text: And a layman may ask: why not just pick up any old junk and offer it up? Great question, hypothetical layman. You only get from an Exchange what you give, and if you give something up that doesn't have much value to you or to anyone, you're not going to get much in return. The more of a personal connection you feel with the object, the greater the loss you'll feel when it's gone—
+text: There's a gentle knock on your door.
+text: You push away from the desk littered with open books and crumpled paper, walk over to the door, open it.
+text: A teenage girl stands in the doorway, her back to you. She faces out toward the town, watching, for who or what you don't know. Her wool sweater is pulled tight around her shoulders.
+text: "Hello," you say hopefully.\n"Ah—!" The girl whips around, eyes wide. "I, er..."\n"How can I help you?"\n"Yes. Or, I hope so. Can I...?" She looks past you into the cottage.\n"Come in?"
+text: She takes it as an invitation, basically pushing past you. She collapses into the chair you were just sitting in.
+text: "Sorry for barging in, it's just that I saw you, today. Outside the tavern. It was really something."\n"Thank you."\n"I'm sure you must be busy, with everyone's requests. I don't want to bother you."\n"It's no bother, really. You're actually the first person to ask me for anything."\n"Wow, really?"\n"Yes, unless you count... what's his name..."
+text: "Antestas?" she offers.\n"Right, Antestas."\n"Sorry about him, he's kind of the town lunatic." She smirks, looks down at her gently clasped hands. Whatever had her spooked before, she seems more relaxed now. "He's always got his nose in this weird book whenever my dad's not on his case."\n"Your dad?"\n"He works on my dad's — sorry, sorry, I'm being rude. My name's Eoneska, and my dad is Cademo."
+text: "Cademo," you say. "He sounds familiar."\n"You might have heard of him, yeah. He owns the farmland to the north and east of Vandine. A bunch of guys from the town work for him."\n"I see."
+text: A silent moment passes between you.
+text: Eoneska clears her throat. "I want your help with something. Sorry if that's too direct, I have no idea how this is supposed to work."\n"Neither do I... I only just got here!" You smile genially.
+text: She smiles back. "I want to leave Vandine."\n"Oh," you say for lack of anything better.\n"It's not that I hate it here or anything, more like I just don't feel like I belong here."\nShe looks over at you; you look expectantly back, just as instructed by the cursory psychology lessons you were rushed through last month. Being a good resident Exchanger means being a good listener.\n"Well, maybe it's not about belonging, more like I just don't like having my whole life"—she squeezes her eyes shut in thought—"planned out for me!"
+text: "No offense," you say, "but you seem pretty young."\n"I'm fifteen," Eoneska says, at least a little offended. "I thought you would understand. You're not that much older than me, right?"\n"I'm twenty-two."\n"Okay, so!"
+text: "Look, it's not my job to tell the people of this town how to live their lives. If it's not against the law, it's my job to help. Where do you want to go?"\n"I don't know, where are you from?"\n"I'm from a town not too different from this one, or so I'm told. I moved away to a school when I was just a kid."\n"Oh." Eoneska slumps forward empathetically.\n"But I've lived in Emben since then, attending the Arcanum. You want to go to Emben?"
+text: "Are there any farmers there?"\n"No."\n"Perfect!"
+text: "Okay," you say hesitantly. "You're not leaving right now, are you? You're barely carrying anything!"\n"I took some of my dad's money! I would have taken a horse if he had any..."\n"Well that IS illegal."\nEoneska's hands fly to her mouth. "Oops!"\n"I'm going to pretend I didn't hear that. Look, money isn't going to get you anywhere by itself. If you promise to prepare a little better, I'll see what I can give you to help."\n"Fine. And..."\nYou reluctantly nod."And I won't tell your father."
+text: You survey the collection of objects scattered about your cottage.
+
+sacrifice: aliment
+	text: You hand her the tin.
+	lose: aliment
+	text: "What's this?" She asks. She opens the lid, peeks inside, shuts it. "I was kind of expecting..."\n"I know. Magic. Those aren't just any crackers — I made them!"\n"I can make crackers."\n"W— well, sure. But those aren't normal crackers. I Exchanged a whole stockroom of provisions at the Arcanum to make them!"\n"Oh, magic crackers! What do I do with them?"
+	text: "Well," you say, "you eat them." Eoneska looks at you, vexed. "And they'll fill you up! One tiny cracker will last you a whole day, if you pace yourself. There's enough in there for two months' journey."\nShe lifts the tin to head level, gazes upon it with new appreciation. "Whoa."\n"They'll never stale or rot. And you won't need much water unless you overexert yourself."
+	score: 5
+	text: "Wow, thanks."\n"My pleasure. It's my job."\nShe shakes the tin softly; the crackers produce a pleasant rustling sound. "Vandine is lucky to have you. Suddenly I... it feels strange to leave."\n"So you're staying?"\n"No. No, I want to get out into the world. I have to. I don't want to be told who I am. I want to find out for myself."
+	text: Eoneska stands, and so do you. She slips the tin into her pack. "Thanks, again. I'll do a more thorough job packing next time."\n"Good."\n"I probably won't see you again." She reaches into her hair, retrieves something, hands it to you.
+	get: ribbon
+	text: "Someone told me, if an Exchanger ever helps you, you give them something. Is this why they call you Exchangers?"\nYou laugh. "That was very good advice. Good luck, Eoneska."
+
+sacrifice: atlas
+	text: "Do you even know where Emdre is?" You ask Eoneska.\n"I... think so."\n"Trick question. It's 'Emben,' not 'Emdre.' How have you not even — never mind." You cringe; she looks embarrassed.\n"I had to teach myself to read. Maybe you can understand why I need to get out of here?"
+	text: "You've seen what a physical Exchange looks like."\n"What, at the tavern? It was amazing."\n"Right. Exchanges can be impressive in that way. But they can also be subtle." You stoop down and pick up the atlas, grunting as you do. "We're going to put this"—you lift the atlas slightly—"in there." You indicate towards her head with yours. "You're going to want to sit down."
+	text: She drops into a chair, looking anxious. "I don't understand."\n"No, you don't." You crack the atlas's spine and wrench the covers apart with all your might. "But you will..."
+	lose: atlas
+	text: ...the tome aerosolizes and drifts over to Eoneska as a cloud of swirling particles. She closes her eyes and takes shallow breaths. You can tell she's trying her best to appear calm. The cloud gets less dense with each breath; after thirty seconds it's gone completely.\n"Well?" You venture.
+	score: 5
+	text: "It's massive," she states simply.\n"I know."\n"The world is just completely massive."\n"We haven't even seen all of it yet."\n"But Emben is fifty-seven miles west-south-west," she replies. "That much we do know."\n"That's right."
+	text: She stands, takes a seconds-long blink. "How long will this last, having all this in my head?"\n"I'm not really sure. It depends a lot on you, actually. The magical part is over; it's just a matter of how much it matters to you."\n"It matters a lot, to me."\n"Then it might stick around a while, long enough for you to learn it for real."
+	text: "Thank you."\n"My pleasure. It's my job."\nShe closes her eyes, squints hard, opens them. "Vandine is lucky to have you. Suddenly I... it feels strange to leave."\n"So you're staying?"\n"No. No, I want to get out into the world. Now that I know this much, I want to see it with my own eyes."
+	text: "I'll do a more thorough job packing next time, now that I know where I'm going."\n"Good."\nShe frowns pensively. "I probably won't see you again." She reaches into her hair, retrieves something, hands it to you.
+	get: ribbon
+	text: "Someone told me, if an Exchanger ever helps you, you give them something."\nYou smile. "That was very good advice. Good luck, Eoneska."
+
+sacrifice: companion
+	text: Ravai is nibbling on seeds you scattered on the nightstand earlier. You pick her up and stroke her fur. "I think she needs you more than I do, dearie." You whisper soft enough for Eoneska not to hear. You set your beloved chipmunk on the ground in the middle of the room, and blurt out a spell before she can move...
+	lose: companion
+	text: ...the tiny creature becomes a much larger one. Eoneska gasps. You're no zoologist, so it's hard to describe exactly what Ravai has become. Something like a pony, mixed with a dog, and definitely some chipmunk still in there: Ravai's dark stripe still runs down her broad back. Almost head height. She doesn't look too perturbed, considering.
+	text: "Do you have a place you can keep her?" You ask.\n"Wow. Oh! I can keep her with the sheep... what is she?"\n"I'm not sure, but her name is Ravai. You can decide what she is."\n"Okay. Wow."\nYou inspect the structure of her legs. "Take it easy on her, alright? You can ride her, but she'll tire pretty easily. Remember, she was a rodent a minute ago. Just a few hours a day. I promise she'll make great company the rest of the time."
+	score: 5
+	text: "Thanks."\n"My pleasure. It's my job."\nShe rests her hand on Ravai, who produces a peculiar, but distinctly mammalian sound. "Vandine is lucky to have you. Suddenly I... it feels strange to leave."\n"So you're staying?"\n"No. No, I want to get out into the world. I have to. I don't want to be told who I am. I want to find out for myself."
+	text: She leads the creature toward the door. "Thanks, again. I'll do a more thorough job packing next time."\n"Good."\n"But I won't make Ravai carry it all!"\n"I know you won't."\nShe frowns pensively. "I probably won't see you again." She reaches into her hair, retrieves something, hands it to you.
+	get: ribbon
+	text: "Someone told me, if an Exchanger ever helps you, you give them something."\nYou smile. "That was very good advice. Good luck, Eoneska."
+
+sacrifice: implements
+	text: You gather up an armful of parchment from your desk, upending inkpots as you go. When it's sufficiently wadded up, you splay your fingers horizontally and bark a brusque command...
+	lose: implements
+	text: ...the papers, comprising years of scholarly notes and research, flatten and fold into a single stark-white sheet. It features an incredibly intricate system of creases that makes it unclear exactly how large it is. As you hand it to Eoneska, a fine black line appears on its surface.
+	text: "What is this?" She asks.\n"Go outside and try it out."\nShe slips out the door and returns puzzled. Once back inside, she scrutinizes the sheet under candlelight. "It made a teeny circle."
+	text: "Where did you go?"\n"I walked around your cottage... oh."\n"Wherever you roam, it will trace a line on this page. You can make your own marks, denote important places and such. This way, no matter how far from home you get, you'll always know exactly how to get back."
+	score: -1
+	text: "Thanks, I guess." Eoneska is obviously disappointed, and isn't trying to hide it.\n"You guess?"\n"It's just"—she screws up her lips—"even though I don't know where I'm going, I don't think I'll want to come back."\n"You might change your mind."\n"I hope not. That would mean that wherever I wind up is even worse than Vandine."
+	text: "Oh," you say.\n"So, that's—"\n"—yeah, that's it, I guess." You get up from the bed, wander to the door. As you stand, feeling out of place in what's meant to be your own home, Eoneska reaches into a pouch on her belt, pulls out something small, and hands it to you.
+	get: coin
+	text: You try to refuse it; she's already wedged her arms behind her back. "You don't have to pay me," you say. "That's not really how it works."\n"Someone told me that if an Exchanger gives you something, you give them something back."\n"That was good of them to say."
+
+sacrifice: orb
+	text: You remove the glass orb from its protective pouch. "Someone gave this to me a long time ago," you say. "Now I think I know why." You grip the orb in both hands and squeeze tightly...
+	lose: orb
+	text: ...a brilliant burst of light escapes between your fingers as the orb condenses. When it fades to a glow, you unveil the result of the Exchange. It's still a glass sphere, about half the diameter, though it is no longer an opaque white. It is perfectly clear on its surface, its edges barely perceptible but for the delicate rainbow-tinged rays it periodically casts around itself. At its center, a sparkling prismatic fractal. "Whoa," Eoneska says.
+	text: "Vandine may have its lunatics," you say, "but on the road, everyone is a lunatic. Understand?"\n"O—okay."\nYou hand her the modified orb. "Keep it in sight while you sleep. As long as you're safe, it will glow. If it stops glowing"—you tap its surface with a nail three times for emphasis—"you are not safe."\nShe nods.\n"If this thing tells you that you're not safe, get away from the road, as far and as quickly as you can without getting noticed. Hide in a bush or something, until it starts glowing again."
+	score: 5
+	text: Eoneska nods solemnly. "Got it. And hey, thanks."\n"My pleasure. It's my job."\nShe stares into the orb's perplexing core, momentarily oblivious. "Vandine is lucky to have you. Suddenly I... it feels strange to leave."\n"So you're staying?"\n"No. No, I want to get out into the world. I have to. I don't want to be told who I am. I want to find out for myself."
+	text: She stands, and so do you. She slips the orb into her pack. "Thanks, again. I'll do a more thorough job packing next time."\n"Good."\n"I probably won't see you again." She reaches into her hair, retrieves something, hands it to you.
+	get: ribbon
+	text: "Someone told me, if an Exchanger ever helps you, you give them something."\nYou smile. "That was very good advice. Good luck, Eoneska."
+
+sacrifice: skein
+	text: You grab the forlorn ball of yarn from the foot of your bed. Let's face it: you're an Exchanger. You were never going to learn to knit the hard way. You take a quick optical measurement, and with a flick of the wrist...
+	lose: skein
+	text: ...it becomes a rather drab sweater. "It's a sweater!" You announce.
+	text: "I already have a sweater. I'm wearing it right now, see?"\n"Oh."
+	score: -5
+	text: She accepts it gratiously. "Oh, but... layers are good. I'm sure it gets cold at night, out on the road."\n"Yeah," you say.\nShe stands abruptly, and you follow suit. "So, that's—"\n"—yeah, that's it, I guess."\n"No, that was amazing! It would have taken me all month to knit this." She slips it on; it's a little big for her.
+	text: As you stand, feeling out of place in what's meant to be your own home, Eoneska reaches into a pouch on her belt, pulls out something small, and hands it to you.
+	get: coin
+	text: You try to refuse it; she's already wedged her arms behind her back. "You don't have to pay me," you say. "That's not really how it works."\n"Someone told me that if an Exchanger gives you something, you give them something back."\n"Oh. That was good of them to say."
+
+text: And then she's gone. You slump into the chair at your desk. Your collection hasn't gotten any worse, but it hasn't necessarily gotten better, and you doubt that most people who come seeking help will give you anything to remember them by. There must be something in one of these books... you settle in for the long night of research ahead.
+go: inversion

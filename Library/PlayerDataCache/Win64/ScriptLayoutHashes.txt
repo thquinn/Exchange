@@ -167,4 +167,4 @@ e04611b8715e6833d2bd7010fc6be10b Unity.TextMeshPro.dll:TMPro.TMP_StyleSheet
 ce3a03e47288712ec447b9ff3ace08c9 Unity.TextMeshPro.dll:TMPro.TMP_ColorGradient
 3a32fb09b357551822a23f25130d6d69 Assembly-CSharp.dll:.AltarScript
 3ade1b80397d125196d9561129f777fd Unity.TextMeshPro.dll:TMPro.TMP_SubMesh
-9ab4962860a69f727191a54d2f0b93c9 Assembly-CSharp.dll:.StoryControllerScript
+6b9bb3e5bbe8719fadbe1c4b9f995083 Assembly-CSharp.dll:.StoryControllerScript

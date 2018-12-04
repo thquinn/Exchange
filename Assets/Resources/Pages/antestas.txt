@@ -2,10 +2,10 @@ time: 18 afternoon
 text: A week passes without event. You hardly leave your cottage, too wary to explore Vandine but for a few twilight forays when you hope not to be seen. No one comes pounding down your door for help.
 text: Eventually, you tire of dried and preserved food, of washing it down with well water. You make yourself as presentable as you can without a mirror, pack up your things, and head out.
 text: A few dozen people mill about the town center. A tavern functions as the entire "commercial district," along with two shoddy wooden stalls manned by locals. People notice you as you pass, let you notice them noticing you. Some smiles, some sneers. A lot of missing teeth.
-text: A man slouching against the tavern spots you and makes a beeline for you.
+text: A man slouching against the tavern spots you and makes a beeline in your direction.
 text: "Hey, you!" He shouts, breaking the afternoon quiet and turning heads.\n"How, uh... how can I help?" You say.\n"You're from the Arcanum." It isn't a question.\n"That's right."\n"You're the Exchanger." A crowd starts to gather, or what makes for a crowd in a hundred-person town.
 text: "Show us something, eh?"\n"Leave it be, Antestas," a woman interjects.\n"'Leave it be'? We got a real-life Exchanger in town, hiding out in that fancy new cottage for a week! Let's see some magic!"
-text: "It's fine," you address the crowd. A mother pulls her young daughter away from the crowd. "Is anyone sick? Anyone have something broken that needs fixing?"\n"No," says Antestas, "I ain't talking about that hedge-wizard shit. I wanna see some dang Magic, capital M!"\nThe crowd murmurs, a mixed reaction, but most stare at you expectantly.
+text: "It's fine," you address the crowd. A mother pulls her young daughter away from the crowd. "Is anyone sick? Anyone have something broken that needs fixing?"\n"No," says Antestas, "I ain't talking about that hedge-wizard shit. I wanna see some dang Magic, capital M!"\nThe crowd murmurs: a mixed reaction, but most stare at you expectantly.
 text: You roll up your sleeves.
 
 sacrifice: aliment
@@ -18,7 +18,7 @@ sacrifice: aliment
 sacrifice: atlas
 	text: You're not sure why, but you decide to appeal to their intellects. You unstrap the atlas from your back and drop it, open, onto the dusty ground. It's turned to a page displaying a map of the entire known world. You let your mind drift up, up, and carefully incant four words...
 	lose: atlas
-	text: ...you stand two kilometers in the air above Vandine, accompanied by the entire crowd. They scream, trying to find their footing, but they eventually calm down and start to look around in bewilderment.
+	text: ...you stand two kilometers in the air above Vandine, accompanied by the entire crowd. They scream, trying to find their footing, but eventually calm down and start to look around in bewilderment.
 	text: The world is laid out like a map below you, Vandine a tiny speck. Dainty clouds drift all around you. The Arcanum and its city, nearly one hundred kilometers away, are visible on the horizon. "There," you announce. "That's where I came from. Not so far away. I'm honored to be your guest here, to learn about your lives and to be a part of them."
 	score: 15
 	text: The illusion fades after a minute. the blue sky under your feet giving way to familiar dirt. "Whoa," Antestas says. "That sure was something." The crowd murmurs its agreement before dispersing, each person staggering away like a sailor with sea legs.
@@ -45,12 +45,18 @@ sacrifice: orb
 	lose: orb
 	text: ...the crowd's collective breath catches in their throat at the sight: their town of Vandine, transformed into a snowy wonderland! In... early spring! Okay, you could have picked a more impressive season for this trick, but they seem satisfied with the show. The children immediately start a snow fight while the adults simply stand and gape.
 	score: 5
-	text: "Wow," Antestas says quietly, "you inverted its aspect."\n"You know what aspect inversion is?" You ask, surprised.
+	text: "Wow," Antestas says quietly, "you completely inverted its aspect."\n"You know what aspect inversion is?" You ask, surprised.
 	text: A look of panic crosses his face. "Uhh... I guess I must have read about it somewhere." Before you can respond, he runs off. The rest of the crowd regards you, impressed, until the snow sublimates and they go about their days.
 
 sacrifice: skein
-	text: Something happens.
+	text: Your mind jumps immediately to the new addition to your pack: the bundle of yarn Zasha gave you last week. Learning to knit might pass time, but if you make a good impression with it instead...
+	text: You unravel the skein in your hands and begin a whispered chant. The loosely tangled yarn floats gently into the air...
 	lose: skein
-	text: Something else happens.
+	text: ...and dissipates into mist. You look out into the crowd: they are frozen stock still, tied in position by invisible fibers. Dozens of pairs of eyeballs swivel madly in their sockets and cast you terrified glances. The only sound is the wind. You walk serenely among them for a minute and admire your ability. When you return to the center of the circle, you sense the effect is about to end. You snap your fingers as it does, for a little dramatic flair.
+	text: The crowd unfreezes, though they're not moving much. They rub their limbs, grumble, stare at you.
+	score: -8
+	text: "Yeesh," Antestas says. "I, uh... I don't think I liked that."\n"Maybe it was a little much," you admit. "I wanted to show you all that I'm the genuine article."
+	text: Most of the crowd has begun to wander off, looking at you over their shoulders. "Now we know," Antestas says. You share a moment of awkward silence before he walks away.
 
-tbc
+text: You duck into the tavern for a quick bite. After a week of survival food, it's a completely revelatory meal. You even enjoy the vegetables: nettle salad and pickled radishes. You return home content.
+go: eoneska

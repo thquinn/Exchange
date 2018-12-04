@@ -1,0 +1,71 @@
+time: 19 the wee hours
+text: The sun is nearly up when you find it. An idea has been scratching at your subconscious mind for hours now, and it finally breaks through: aspect inversion. If you can't increase the quantity of objects available to you, you can at least make something old into something new. Something you might be able to use.
+text: You've never attempted a reflexive primary aspect inversion before, and the details you can find of the ritual aren't quite complete, but you've been cramming all night and you'll be damned if you go to bed now with nothing to show for it.
+text: You brush a clump of papers from your desk onto the floor to make a clean spot, array the reagents and foci exactly. Exactly how you think they're supposed to be, anyway. If this works, you'll be able to Exchange an object for its direct and exact conceptual opposite. Maybe. You dash around the room looking for the perfect test subject. And then you see it.
+
+sacrifice: aliment
+	text: You take the lid off the tin and scatter cracker chunks around your desk, feeling unsure of yourself. Is this the life of a resident Exchanger? You didn't expect glamour, but you also didn't expect to be making croutons before dawn.
+	text: You recite what you are pretty sure is the correct incantation, with more or less accurate pronunciation...
+	lose: aliment
+	text: ...the homemade croutons disappear in a spritz of water, and...
+	get: seeds
+	text: ...hm. The opposite of baked, milled grain is... this pile of seeds? Semantic quandaries like this are the bread and butter, so to speak, of the profession. An Exchanger must possess a curiosity about these things to be any good at all.
+	
+sacrifice: atlas
+	text: You haul the bulky atlas onto your desk. Maybe a book isn't exactly what you need out here in the sticks.
+	text: You recite what you are pretty sure is the correct incantation, with more or less accurate pronunciation...
+	lose: atlas
+	text: ...the atlas disappears in a puff of dust, and...
+	get: veil
+	text: ...a piece of thin cloth drifts down into the ritual circle. It looks like a funerary veil... this is the opposite of an atlas? You poke it cautiously; it doesn't seem to exhibit any unusual properties. Did you do this right? 
+	
+sacrifice: companion
+	text: A sense of dread overcomes you as you place the sleeping Ravai onto your desk. She looks so peaceful, there among all the arcane instruments. You can already tell this is a bad idea — why are you doing this?
+	text: You recite what you are pretty sure is the correct incantation, with more or less accurate pronunciation...
+	lose: companion
+	text: ...your furry companion disappears in a cloud of ash, and...
+	get: fiend
+	text: ...a tiny demon leaps at your face from where Ravai slept a moment ago. Its claws sink into your cheek like a clutch of sewing pins, over and over, seeking purchase. You grab it as fast as you can and cram it into one of your belt pouches, earning you a chewed-up hand in the process. The fiend thrashes around in the pouch for a few seconds, then lies unnervingly still. There is no doubt in your mind that the ritual worked as intended.
+	
+sacrifice: coin
+	text: You had placed Eoneska's coin on your desk, and now it's on the floor. You stoop down, pick it up, place it back at the center of the desk. You brought enough money with you to Vandine; maybe you can make something more useful out of this.
+	text: You recite what you are pretty sure is the correct incantation, with more or less accurate pronunciation...
+	lose: coin
+	text: ...the coin disappears in a rain of metal shavings, and...
+	get: ring
+	text: ...a chunky wooden ring rolls onto the table. You pick it up and inspect it. It's certainly unusual: you can't thing of a place where such a thing is fashionable. Then there's the matter of the ritual. You can understand wood and silver being opposites, maybe, but a coin and a ring? They seem awful similar, conceptually. Maybe you missed something, executed the ritual incorrectly.
+	
+sacrifice: implements
+	text: You look at the pile of papers and miscellany you just dumped on the floor, shrug, and dump it all back on the desk. You marshal it all into a contained space, wadding it up into a big parchment mess. You shrug again.
+	text: You recite what you are pretty sure is the correct incantation, with more or less accurate pronunciation...
+	lose: implements
+	text: ...the wad of papers disappears in an eruption of sawdust, and...
+	get: spirit
+	text: ...a filled canteen lands on the table, jiggles slightly. From what you gather, it seems to contain something close to pure ethanol. Not that you would test that assumption: you like your eyesight quite well, thank you very much. You fumble with your belt loops and attach the canteen to your hip. Hopefully you'll remember not to drink from it.
+	
+sacrifice: orb
+	text: This glass ball hasn't done anything for you in the years you've owned it. Why did you haul it all the way out to Vandine? You place it gingerly in the center of your impromptu ritual area. Perhaps you can make it into something a little more useful.
+	text: You recite what you are pretty sure is the correct incantation, with more or less accurate pronunciation...
+	lose: orb
+	text: ...the orb disappears in a burst of snowflakes, and...
+	get: dice
+	text: ...two strange shapes clatter onto the desk. They're marked with numbers from one to nineteen, and are made of a waxy, yet hard substance. A glass orb, turning into dice. A strange kind of inversion, not that you can think of anything better of the top of your head. You pocket them: maybe you can make up a game that makes use of them.
+	
+sacrifice: ribbon
+	text: Recalling Eoneska's visit, you consider the ribbon she gave you. It seems a little premature to be rid of it so soon, this token of gratitude... but hey, why not? An Exchanger must be bold, throw back what the universe gives them. In a way, the Exchange is the ultimate cosmic regifting.
+	text: Okay. You drape the hair ribbon onto the desk and recite what you are pretty sure is the correct incantation, with more or less accurate pronunciation...
+	lose: ribbon
+	text: ...the ribbon disappears in a shower of cinders, and...
+	get: dagger
+	text: ...a small dagger lands on the table with a clang. Its metal reverberates like a tuning fork, filling your cottage with a terrible keening. You gingerly place a finger on it to stop the vibration. Much better. You wonder if the ritual worked as intended: a dagger can cut ribbon, certainly, but it is really the direct and exact conceptual opposite of a ribbon? Wouldn't a pair of scissors make even more sense? Lacking a proper sheath for it, you tape it to the inside of your boot.
+	
+sacrifice: skein
+	text: You plop the skein onto the desk and cross your arms. Were you really going to take up knitting? Probably not — the mayor's gift will be of more use to you in a different form.
+	text: You recite what you are pretty sure is the correct incantation, with more or less accurate pronunciation...
+	lose: skein
+	text: ...the skein disappears in a billow of strange fibers, and...
+	get: needle
+	text: ...something has taken its place. It seems to dance in and out of existence with each flicker of candlelight, but it looks like a needle. A rather literal inversion, you think: a ball of yarn becoming a needle? A rather unusual needle, at that. The semantics of Exchanging don't usually work that way. You wrap it in fabric and tuck it into your sack, taking great care to avoid its points. They would likely cut to the bone with little resistance.
+
+text: You were tired before, but the fatigue suddenly reasserts itself. Your head feels like an overinflated balloon. Uh oh. The ritual may have taken more out of you that you hoped it might. Unbalanced Exchanges can have this effect, taking the difference out of the Exchanger. You stagger over to your bed and remember nothing more.
+tbc

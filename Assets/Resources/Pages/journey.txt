@@ -8,7 +8,7 @@ time: 10 late evening
 reveal
 text: It's dark when the wagon pulls into Vandine. A slender crescent of a moon provides the only illumination, setting the black silhouettes of houses against a near-black sky. No lanternlight on the streets, not a single candle in a window.
 text: The driver dismounts, squinting over a map. After a minute of holding it up to the moon and scratching his head, he leads you to a small cottage on the edge of town and pushes the door open. No lock. He motions inside before quickly and wordlessly walking back towards the wagon. You are alone.
-text: Your sense of the darkness is suddenly acute. You dash inside the cottage and mutter an arcane word to produce light as you slam the door.
+text: Your sense of the darkness is suddenly acute. You dash inside the cottage and mutter an arcane word that exchanges a scant amount of oxygen in the air for a similarly scant amount of cold light. You ease into the cottage and shut the door.
 text: It's surprisingly nice inside: well furnished, cozy, stocked with provisions. You light some candles and sit on the bed, meaning to take an inventory...
 time: 11 morning
 text: ...you jump awake at the sound of someone knocking at your door. Sunlight streams in through the windows. Heart racing, you smooth out your robes and open the door.

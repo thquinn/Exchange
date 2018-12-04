@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using System.Text;
 using System.Text.RegularExpressions;
 using TMPro;
 using UnityEngine;
@@ -13,8 +14,8 @@ public class StoryControllerScript : MonoBehaviour {
     Dictionary<string, Page> pages;
     Page currentPage;
     int index, subIndex;
-    ContinueTrigger continueTrigger;
-    bool intro = true;
+    public ContinueTrigger continueTrigger;
+    bool firstLine = true, intro = true;
     int score;
 
     // Display.
@@ -27,6 +28,7 @@ public class StoryControllerScript : MonoBehaviour {
     public ScrollRect scrollRect;
     bool needScrollToBottom = false;
     public TextMeshProUGUI timeLabel, daysLeftLabel;
+    StringBuilder mainTextStringBuilder;
     int day;
     string time;
     int timer;
@@ -35,6 +37,17 @@ public class StoryControllerScript : MonoBehaviour {
     public AudioScript audioScript;
 
 	void Start () {
+        // HACK: TextMeshProUGUI.text returning empty string in built version, track text separately.
+        mainTextStringBuilder = new StringBuilder();
+        // HACK: Rescale TextMeshProUGUI font sizes.
+        float fontScaleFactor = Screen.height / 1000f;
+        introText.fontSize *= fontScaleFactor;
+        mainText.fontSize *= fontScaleFactor;
+        promptLabel.fontSize *= fontScaleFactor;
+        timeLabel.fontSize *= fontScaleFactor;
+        daysLeftLabel.fontSize *= fontScaleFactor;
+        acceptCardDescriptionLabel.fontSize *= fontScaleFactor;
+
         score = 0;
 
         introText.text = "";
@@ -58,6 +71,9 @@ public class StoryControllerScript : MonoBehaviour {
         Time startTime = (Time)CurrentLineOrSubline();
         day = startTime.day;
         time = startTime.time;
+
+        continueTrigger = ContinueTrigger.Timer;
+        timer = 120;
 	}
     void GoToPage(string name) {
         currentPage = pages[name];
@@ -89,12 +105,13 @@ public class StoryControllerScript : MonoBehaviour {
         }
     }
 
-    static HashSet<ContinueTrigger> mainTextFadeTriggers = new HashSet<ContinueTrigger>() { ContinueTrigger.AcceptCard, ContinueTrigger.AddCardToHand, ContinueTrigger.HideTimer, ContinueTrigger.LossFadeIn, ContinueTrigger.LossFadeOut, ContinueTrigger.RevealFade };
+    static HashSet<ContinueTrigger> MAIN_TEXT_FADE_TRIGGERS = new HashSet<ContinueTrigger>() { ContinueTrigger.AcceptCard, ContinueTrigger.AddCardToHand, ContinueTrigger.HideTimer, ContinueTrigger.LossFadeIn, ContinueTrigger.LossFadeOut, ContinueTrigger.RevealFade };
+    public static HashSet<ContinueTrigger> HOVER_HAND_FADE_TRIGGERS = new HashSet<ContinueTrigger>() { ContinueTrigger.Click, ContinueTrigger.Sacrifice };
     void LateUpdate () {
         if (Input.GetKeyDown(KeyCode.Escape)) {
             Application.Quit();
         }
-        if (mainTextFadeTriggers.Contains(continueTrigger) || cardScript.PlayerIsHolding()) {
+        if (MAIN_TEXT_FADE_TRIGGERS.Contains(continueTrigger) || cardScript.PlayerIsHolding() || (HOVER_HAND_FADE_TRIGGERS.Contains(continueTrigger) && Input.GetKey(KeyCode.Space))) {
             mainTextFade.alpha = Mathf.Max(0, mainTextFade.alpha -= .05f);
         } else {
             mainTextFade.alpha = Mathf.Min(1, mainTextFade.alpha += .05f);
@@ -115,7 +132,7 @@ public class StoryControllerScript : MonoBehaviour {
             }
             if (Input.GetMouseButtonDown(0)) {
                 cardScript.AddCreatedToHand();
-                audioScript.Play(SFX.Click);
+                audioScript.Play(SFX.CardReturn);
                 continueTrigger = ContinueTrigger.AddCardToHand;
             }
         }
@@ -254,8 +271,9 @@ public class StoryControllerScript : MonoBehaviour {
                         // TODO: Prevent out of bounds for pages that end in sacrifice.
                     }
                 }
-            }
-            else {
+            } else if (firstLine) { // A bit of a hack to prevent the intro timer from skipping the first line.
+                firstLine = false;
+            } else {
                 index++;
             }
             LineType currentType = CurrentLineOrSubline().GetLineType();
@@ -277,8 +295,12 @@ public class StoryControllerScript : MonoBehaviour {
                 score += scoreLine.points;
             } else if (currentType == LineType.Text) {
                 Text textLine = (Text)CurrentLineOrSubline();
-                string newText = mainText.text + (mainText.text.Length > 0 ? "\n\n" : "") + textLine.text;
-                mainText.SetText(newText);
+                if (mainTextStringBuilder.Length != 0) {
+                    mainTextStringBuilder.Append("\n\n");
+                }
+                mainTextStringBuilder.Append('\t');
+                mainTextStringBuilder.Append(textLine.text.Replace("\n", "\n\t"));
+                mainText.SetText(mainTextStringBuilder.ToString());
                 if (intro) {
                     if (introText.text.Length > 0) {
                         introText.text += "\n\n";
@@ -356,8 +378,8 @@ public class StoryControllerScript : MonoBehaviour {
         int daysRemaining = 368 - day;
         daysLeftLabel.text = daysRemaining + (daysRemaining == 1 ? " day" : " days") + (daysRemaining == 1 ? " remains" : " remain");
     }
+}
 
-    enum ContinueTrigger {
-        None, AcceptCard, AddCardToHand, ClearFade, Click, HideTimer, LossFadeIn, LossFadeOut, RevealDaysLeft, RevealFade, Sacrifice, Timer, TimeUpdate, ToBeContinued
-    }
+public enum ContinueTrigger {
+    None, AcceptCard, AddCardToHand, ClearFade, Click, HideTimer, LossFadeIn, LossFadeOut, RevealDaysLeft, RevealFade, Sacrifice, Timer, TimeUpdate, ToBeContinued
 }

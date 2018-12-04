@@ -21,6 +21,10 @@ public class CardControllerScript : MonoBehaviour {
     float heldDX = 0, heldDY = 0;
 
     void Start() {
+        // HACK: Rescale TextMeshProUGUI font sizes.
+        float fontScaleFactor = Screen.height / 1000f;
+        descriptionLabel.fontSize *= fontScaleFactor;
+
         descriptionLabel.alpha = 0;
 
         cardImages = new Dictionary<string, Texture>();
@@ -176,7 +180,9 @@ public class CardControllerScript : MonoBehaviour {
             maxTheta += count * .01f;
             theta = -maxTheta + i * (2 * maxTheta / count);
         }
-        float cy = -10, r = 5f;
+        bool hoverHand = Input.GetKey(KeyCode.Space) && StoryControllerScript.HOVER_HAND_FADE_TRIGGERS.Contains(storyScript.continueTrigger);
+        float cy = hoverHand ? -5 : -10;
+        float r = 5f;
         Vector3 position = new Vector3(1.5f * Mathf.Sin(theta) * r, cy + r * Mathf.Cos(theta), -10 - i / 100f);
         rotation = Quaternion.Euler(0, 0, theta * -30);
         return position;
